@@ -1,0 +1,11 @@
+#Напишите программу, которая находит разность между суммой чётных и нечётных чисел в списке.
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+even_sum = 0
+odd_sum = 0
+for num in numbers:
+    if num % 2 == 0:
+        even_sum += num
+    else:
+        odd_sum += num
+difference = even_sum - odd_sum
+print(f"Разность между суммой чётных и нечётных: {difference}")
