@@ -1,9 +1,10 @@
-def multiply_digits(n):
-    product = 1
-    for digit in str(n):
-        if digit.isdigit():
-            product *= int(digit)
-    return product
-
+#Напишите программу, которая вычисляет произведение всех цифр числа N.
 N = 5981
-print(f"Произведение цифр {N}: {multiply_digits(N)}")
+number_str = str(N)
+product = 1
+
+for digit in number_str:
+    if digit.isdigit():
+        product *= int(digit)
+
+print(f"Произведение цифр {N}: {product}")
