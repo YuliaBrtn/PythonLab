@@ -22,3 +22,8 @@ plt.ylabel('Продукты', fontsize=12)
 plt.grid(True, axis='x', alpha=0.3)
 plt.tight_layout()
 plt.show()
+
+# Сохраняем в PNG и PDF
+plt.savefig('scatter_plot.png', dpi=300, bbox_inches='tight')
+plt.savefig('scatter_plot.pdf', bbox_inches='tight')
+plt.close()  # Закрываем фигуру
